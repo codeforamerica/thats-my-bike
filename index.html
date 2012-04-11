@@ -8,8 +8,7 @@
     <meta name="description" content="License and register your bicycle with the city of Santa Cruz.">
     <meta name="author" content="City of Santa Cruz, CA">
     
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
-    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
     
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -26,8 +25,8 @@
   <body>
     <div style="padding:3em 20px;">
 
-      <header style="width:280px;">
-        <h1 style="margin-bottom:18px; font-size: 48px; letter-spacing: -1px; line-height: 1;">License and register your <img src="assets/img/bicycle.png" alt="bicycle" style="width:260px;">.</h1>
+      <header>
+        <h1>License and register your <span id="bicycle" class="ir">bicycle</span> in Santa Cruz.</h1>
         <p>
           Licensing your bicycle is <strong>free</strong> and <strong>required</strong> by the city of Santa Cruz<sup><a href="#footnote-1">1</a></sup>.
         </p>
@@ -36,11 +35,9 @@
         </p>
       </header>
       
-      <hr style="border-bottom:1px dotted #F00;margin:3em 0;width:280px;">
-
-      <form method="post" action="" style="width:280px;" class="form-vertical" id="get-started">
+      <form method="post" action="">
         
-        <fieldset class="well" style="margin:2em 0;">
+        <fieldset>
           <h3>First, The Owner.</h3>
           <p>If your bicycle is stolen and recovered, this is how the police will contact you.</p>
           <div class="control-group">
@@ -81,9 +78,7 @@
           </div><!-- /.control-group -->
         </fieldset>
         
-        <hr style="border-bottom:1px dotted #F00;margin:3em 0;width:280px;">
-        
-        <fieldset class="well" style="margin:2em 0;">
+        <fieldset>
           <h3>Next, The Bicycle.</h3>
           <p>If you're not sure about any of this information, ask your bike mechanic.</p>
           <div class="control-group" class="required">
@@ -136,9 +131,7 @@
           </div><!-- /.control-group -->
         </fieldset>
         
-        <hr style="border-bottom:1px dotted #F00;margin:3em 0;width:280px;">
-        
-        <fieldset class="well" style="margin:2em 0;">
+        <fieldset>
           <h3>Finally, The License.</h3>
           <p>Grab the sticker and affix it to the front of the seat tube<sup><a href="#footnote-2">2</a></sup>. The license is valid for three years.</p>
           <div class="control-group">
