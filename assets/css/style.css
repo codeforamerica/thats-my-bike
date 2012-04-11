@@ -327,6 +327,54 @@ td {
    APP-SPECIFIC STYLES
    ========================================================================== */
 
+body {
+  background: #4586CC;
+}
+
+/* === Masthead ===================== */
+
+#masthead {
+  background: #7aa9db;
+  padding: 0.5em 1em;
+}
+
+#masthead h1 {
+  font-size: 2.4em;
+}
+
+#masthead .bicycle {
+  background: transparent url(../img/bicycle.png) no-repeat scroll center;
+  display: block;
+
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+
+}
+
+#masthead .city {
+  border-bottom: 1px solid #f2f7fc;
+  color: #000;
+}
+
+/* === Explanation ================== */
+
+#explanation {
+  color: #FFF;
+}
+
+/* === Form ========================= */
+
+#registration fieldset {
+  background: #7aa9db;
+  padding: 0.5em 1em 2em 1em;
+  margin: 1em 0;
+}
+
+.control-group {
+  margin-bottom: 1em;
+}
 
 
 /* =============================================================================
