@@ -14,4 +14,5 @@ def on_submit():
     return 'has "owner_name": %s' % ('owner_name' in request.form)
 
 if __name__ == '__main__':
-    app.run(os.environ['PORT'])
+    port = int(os.environ['PORT'])
+    app.run(port=port)
