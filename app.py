@@ -12,4 +12,4 @@ def on_submit():
     return 'has "owner_name": %s' % ('owner_name' in request.form)
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run()
