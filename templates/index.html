@@ -8,7 +8,8 @@
     <meta name="description" content="License and register your bicycle with the city of Santa Cruz.">
     <meta name="author" content="City of Santa Cruz, CA">
     
-    <link href="assets/css/style.css" rel="stylesheet">
+    <link href="static/css/style.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Glegoo" rel="stylesheet">
     
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -16,64 +17,64 @@
     <![endif]-->
     
     <!-- Icons -->
-    <link rel="shortcut icon" href="assets/images/favicon.ico">
-    <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="assets/images/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="assets/images/apple-touch-icon-114x114.png">
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+    <link rel="apple-touch-icon" href="static/images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="static/images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="static/images/apple-touch-icon-114x114.png">
   </head>
-
+  
   <body>
-    <div style="padding:3em 20px;">
+    <div id="page">
 
       <header>
-        <h1>License and register your <span id="bicycle" class="ir">bicycle</span> in Santa Cruz.</h1>
+        <h1 class="ir">License and register your bicycle in Santa Cruz.</h1>
         <p>
-          Licensing your bicycle is <strong>free</strong> and <strong>required</strong> by the city of Santa Cruz<sup><a href="#footnote-1">1</a></sup>.
+          Licensing your bicycle is free and required by the city of Santa Cruz<sup><a href="#footnote-1">1</a></sup>.
         </p>
         <p>
           Registering your bicycle with the Santa Cruz Police Department <strong>increases the likelihood of recovering it if it's ever stolen</strong>.
         </p>
       </header>
       
-      <form method="post" action="">
+      <form method="post" action="submit">
         
         <fieldset>
           <h3>First, The Owner.</h3>
           <p>If your bicycle is stolen and recovered, this is how the police will contact you.</p>
           <div class="control-group">
-            <label class="control-label" for="owner-name">Full Name</label>
+            <label class="control-label" for="owner_name">Full Name</label>
             <div class="controls">
-              <input type="text" id="owner" placeholder="Jane Doe">
+              <input type="text" id="owner_name" name="owner_name" placeholder="e.g. Betty Bikeowner">
             </div><!-- /.controls -->
           </div><!-- /.control-group -->
           <div class="control-group">
-            <label class="control-label" for="owner-street">Street Address</label>
+            <label class="control-label" for="owner_street">Street Address</label>
             <div class="controls">
-              <input type="text" id="owner-street" placeholder="Street Address">
+              <input type="text" id="owner_street" name="owner_street" placeholder="e.g. 809 Center Street">
             </div><!-- /.controls -->
           </div><!-- /.control-group -->
           <div class="control-group">
-            <label class="control-label" for="owner-city">City</label>
+            <label class="control-label" for="owner_city">City</label>
             <div class="controls">
-              <input type="text" id="owner-city" placeholder="City">
+              <input type="text" id="owner_city" name="owner_city" placeholder="e.g. Santa Cruz">
             </div><!-- /.controls -->
           </div><!-- /.control-group -->
           <div class="control-group">
-            <label class="control-label" for="owner-street">ZIP Code</label>
+            <label class="control-label" for="owner_zip">ZIP Code</label>
             <div class="controls">
-              <input type="text" id="owner-zip" placeholder="ZIP Code">
+              <input type="text" id="owner_zip" name="owner_zip" placeholder="e.g. 95060">
             </div><!-- /.controls -->
           </div><!-- /.control-group -->
           <div class="control-group">
-            <label class="control-label" for="owner-phone">Phone</label>
+            <label class="control-label" for="owner_phone">Phone</label>
             <div class="controls">
-              <input type="text" id="owner-phone" placeholder="(###) ###-####">
+              <input type="text" id="owner_phone" name="owner_phone" placeholder="(###) ###-####">
             </div><!-- /.controls -->
           </div><!-- /.control-group -->
           <div class="control-group">
-            <label class="control-label" for="owner-phone">Email</label>
+            <label class="control-label" for="owner_phone">Email</label>
             <div class="controls">
-              <input type="text" id="owner-phone" placeholder="you@domain.com">
+              <input type="text" id="owner_phone" name="owner_phone" placeholder="you@domain.com">
             </div><!-- /.controls -->
           </div><!-- /.control-group -->
         </fieldset>
@@ -82,51 +83,51 @@
           <h3>Next, The Bicycle.</h3>
           <p>If you're not sure about any of this information, ask your bike mechanic.</p>
           <div class="control-group" class="required">
-            <label class="control-label" for="bike-serial">Serial #</label>
+            <label class="control-label" for="bike_serial">Serial #</label>
             <div class="controls">
-              <input type="text" id="serial">
+              <input type="text" id="bike_serial" name="bike_serial">
             </div><!-- /.controls -->
           </div><!-- /.control-group -->
           <div class="control-group" class="required">
-            <label class="control-label" for="bike-manufacturer">Manufacturer</label>
+            <label class="control-label" for="bike_manufacturer">Manufacturer</label>
             <div class="controls">
-              <input type="text" id="manufacturer" placeholder="">
+              <input type="text" id="bike_manufacturer" name="bike_manufacturer" placeholder="">
             </div><!-- /.controls -->
           </div><!-- /.control-group -->
           <div class="control-group" class="required">
-            <label class="control-label" for="bike-model">Model</label>
+            <label class="control-label" for="bike_model">Model</label>
             <div class="controls">
-              <input type="text" id="model" placeholder="">
+              <input type="text" id="bike_model" name="bike_model" placeholder="">
             </div><!-- /.controls -->
           </div><!-- /.control-group -->
           <div class="control-group">
-            <label class="control-label" for="bike-year">Model Year</label>
+            <label class="control-label" for="bike_year">Model Year</label>
             <div class="controls">
-              <input type="text" id="year" placeholder="">
+              <input type="text" id="bike_year" name="bike_year" placeholder="">
             </div><!-- /.controls -->
           </div><!-- /.control-group -->
           <div class="control-group">
-            <label class="control-label" for="bike-color">Color</label>
+            <label class="control-label" for="bike_color">Color</label>
             <div class="controls">
-              <input type="text" id="color" placeholder="">
+              <input type="text" id="bike_color" name="bike_color" placeholder="">
             </div><!-- /.controls -->
           </div><!-- /.control-group -->
           <div class="control-group" class="required">
-            <label class="control-label" for="bike-framesize">Frame Size</label>
+            <label class="control-label" for="bike_framesize">Frame Size</label>
             <div class="controls">
-              <input type="text" id="bike-framesize" placeholder='e.g. 50"'>
+              <input type="text" id="bike_framesize" name="bike_framesize" placeholder='e.g. 50"'>
             </div><!-- /.controls -->
           </div><!-- /.control-group -->
           <div class="control-group" class="required">
-            <label class="control-label" for="bike-wheelsize">Wheel Size</label>
+            <label class="control-label" for="bike_wheelsize">Wheel Size</label>
             <div class="controls">
-              <input type="text" id="bike-wheelsize" placeholder='e.g. 700c'>
+              <input type="text" id="bike_wheelsize" name="bike_wheelsize" placeholder='e.g. 700c'>
             </div><!-- /.controls -->
           </div><!-- /.control-group -->
           <div class="control-group">
-            <label class="control-label" for="bike-photo">Photo</label>
+            <label class="control-label" for="bike_photo">Photo</label>
             <div class="controls">
-              <input class="input-file" id="bike-photo" type="file" style="width:80px !important;">
+              <input class="input-file" id="bike_photo" name="bike_photo" type="file" style="width:80px !important;">
             </div><!-- /.controls -->
           </div><!-- /.control-group -->
         </fieldset>
@@ -135,9 +136,9 @@
           <h3>Finally, The License.</h3>
           <p>Grab the sticker and affix it to the front of the seat tube<sup><a href="#footnote-2">2</a></sup>. The license is valid for three years.</p>
           <div class="control-group">
-            <label class="control-label" for="bike-license">License #</label>
+            <label class="control-label" for="bike_license">License #</label>
             <div class="controls">
-              <input type="text" id="bike-license" placeholder="">
+              <input type="text" id="bike_license" name="bike_license" placeholder="">
             </div><!-- /.controls -->
           </div><!-- /.control-group -->
         </fieldset>
