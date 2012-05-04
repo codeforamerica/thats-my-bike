@@ -32,14 +32,13 @@ def on_submit():
     try:
         f = open(path, 'r')
         try:
-            f.read()
+            contents = f.read()
         finally:
             f.close()
     except IOError:
         return "read failed"
     
-    return "all done!"
-
+    return "all done! contents: %s" % contents
 
 def ensure_dir(f):
     d = os.path.dirname(f)
