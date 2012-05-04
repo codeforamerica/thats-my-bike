@@ -13,7 +13,9 @@ def on_submit():
     
     filename = request.form['owner_name'] + '.txt'
     
-    path = os.path.join('.','tmp',filename)
+    path = os.path.abspath(os.path.join('.','tmp',filename))
+    
+    ensure_dir(path)
     
     try:
         # Create text file.
@@ -37,6 +39,12 @@ def on_submit():
         return "read failed"
     
     return "all done!"
+
+
+def ensure_dir(f):
+    d = os.path.dirname(f)
+    if not os.path.exists(d):
+        os.makedirs(d)
 
 if __name__ == '__main__':
     port = int('PORT' in os.environ and os.environ['PORT'] or '5000')
