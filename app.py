@@ -26,7 +26,7 @@ def on_submit():
         finally:
             f.close()
     except IOError:
-        return "write failed"
+        return "Write failed."
     
     # See if it worked!
     try:
@@ -38,7 +38,7 @@ def on_submit():
     except IOError:
         return "read failed"
     
-    return "all done! contents: %s" % contents
+    return "All done! (Contents: %s)" % contents
 
 def ensure_dir(f):
     d = os.path.dirname(f)

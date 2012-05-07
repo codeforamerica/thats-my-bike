@@ -1,0 +1,4 @@
+An app that:
+1. Collects bicycle registration data,
+2. Writes it to a database, and
+3. Transmits it to a text file on a server at the Santa Cruz PD.
